@@ -1,0 +1,30 @@
+@import "../../../node_modules/nord/src/sass/nord.scss";
+
+nav.main-nav {
+  display: flex;
+  background-color: $nord0;
+  align-items: center;
+  height: 56px;
+  padding: 0px 20px;
+  a.main-nav__link {
+    color: $nord4;
+    text-decoration: none;
+    font-family: unset;
+    font-size: 12pt;
+    transition: 200ms;
+    border-radius: 3px;
+    padding: 5px 10px;
+    text-decoration: underline solid transparent;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+    &:not(.title):hover {
+      background-color: $nord3;
+      text-decoration: underline $nord4;
+    }
+    &.title {
+      font-size: x-large;
+      margin-right: auto;
+    }
+  }
+}

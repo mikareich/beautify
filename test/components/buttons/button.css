@@ -1,0 +1,52 @@
+beautify-button {
+  /* Basic */
+  color: #2E3440;
+  text-decoration: unset;
+  border: none;
+  display: inline-block;
+  width: auto;
+  padding: 10px 0px;
+  font-family: unset;
+  padding: 10px 20px;
+  font-size: 12pt;
+  border-radius: 3px;
+  margin: 10px 20px;
+  outline: none;
+  background-color: #ECEFF4;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  border: 2px solid #4C566A;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  /*  */
+  /* disabled mode */
+  /* Interactives */
+}
+
+beautify-button beuatify-button-prepend {
+  margin-right: 20px;
+}
+
+beautify-button beautify-button-append {
+  margin-left: 20px;
+}
+
+beautify-button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+beautify-button:not([disabled]):hover, beautify-button:not([disabled]):focus {
+  background-color: #D8DEE9;
+  border: 2px solid #2E3440;
+}
+
+beautify-button:not([disabled]):active {
+  background-color: #4C566A;
+  color: #ECEFF4;
+  -webkit-box-shadow: 0px 5px 10px #434C5E;
+          box-shadow: 0px 5px 10px #434C5E;
+  margin: 5px 20px 15px 20px;
+}
+/*# sourceMappingURL=button.css.map */

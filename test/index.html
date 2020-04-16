@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test beautify</title>
+    <link rel="stylesheet" href="./components/index.css" />
+    <link rel="stylesheet" href="./components/buttons/button.css" />
+    <link rel="stylesheet" href="./components/navigation/navigation.css" />
+    <link rel="stylesheet" href="./components/prism.css" />
+  </head>
+  <body>
+    <nav class="main-nav" aria-label="Main">
+      <a href="#" class="main-nav__link title">Beautify</a>
+      <a href="#" class="main-nav__link">Home</a>
+      <a href="#" class="main-nav__link">Work</a>
+      <a href="#" class="main-nav__link">About us</a>
+    </nav>
+    <section id="buttons">
+      <h2>Buttons</h2>
+      <h3>Standart Button</h3>
+      <beautify-button /></beautify-button>
+      <pre>
+        <code class="language-markup ">
+&lt;beautify-button>
+  &lt;beautify-button-prepend>
+    🚀
+  &lt;/beautify-button-prepend>
+  &lt;beautify-button-body>My Button&lt;/beautify-button-body>
+  &lt;beautify-button-append>
+    👨‍🚀
+  &lt;/beautify-button-append>
+&lt;/beautify></code>         
+        </pre>
+      <h3>Disabled Button</h3>
+      <beautify-button disabled>
+        <beautify-button-prepend>
+          🚀
+        </beautify-button-prepend>
+        <beautify-button-body>My Button</beautify-button-body>
+        <beautify-button-append>
+          👨‍🚀
+        </beautify-button-append>
+      </beautify-button-prepend>
+      </beautify-button>
+      <pre>
+        <code class="language-markup ">
+&lt;beautify-button disabled>
+  &lt;beautify-button-prepend>
+    🚀
+  &lt;/beautify-button-prepend>
+  &lt;beautify-button-body>My Button&lt;/beautify-button-body>
+  &lt;beautify-button-append>
+    👨‍🚀
+  &lt;/beautify-button-append>
+&lt;/beautify></code>         
+        </pre>
+    </section>
+    <script src="./components/prism.min.js"></script>
+    <script src="./components/buttons/button.js"></script>
+    <script>
+      const beautifyButtons = document.querySelectorAll("beautify-button")
+      beautifyButtons[0].label = "Mika"
+      beautifyButtons[0].label = "Mika de"
+    </script>
+  </body>
+</html>

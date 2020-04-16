@@ -1,0 +1,40 @@
+nav.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #2E3440;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 56px;
+  padding: 0px 20px;
+}
+
+nav.main-nav a.main-nav__link {
+  color: #D8DEE9;
+  text-decoration: none;
+  font-family: unset;
+  font-size: 12pt;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  border-radius: 3px;
+  padding: 5px 10px;
+  -webkit-text-decoration: underline solid transparent;
+          text-decoration: underline solid transparent;
+}
+
+nav.main-nav a.main-nav__link:not(:last-child) {
+  margin-right: 20px;
+}
+
+nav.main-nav a.main-nav__link:not(.title):hover {
+  background-color: #4C566A;
+  -webkit-text-decoration: underline #D8DEE9;
+          text-decoration: underline #D8DEE9;
+}
+
+nav.main-nav a.main-nav__link.title {
+  font-size: x-large;
+  margin-right: auto;
+}
+/*# sourceMappingURL=navigation.css.map */

@@ -1,0 +1,53 @@
+@import "../../../node_modules/nord/src/sass/nord.scss";
+$offset: 5px;
+beautify-button {
+  /* Basic */
+  color: $nord0;
+  text-decoration: unset;
+  border: none;
+  display: inline-block;
+  width: auto;
+  padding: 10px 0px;
+  font-family: unset;
+  padding: 10px 20px;
+  font-size: 12pt;
+  border-radius: 3px;
+  margin: 10px 20px;
+  outline: none;
+  background-color: $nord6;
+  transition: 200ms;
+  border: 2px solid $nord3;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+
+  beuatify-button-prepend {
+    margin-right: 20px;
+  }
+  beautify-button-append {
+    margin-left: 20px;
+  }
+
+  /*  */
+
+  /* disabled mode */
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  /* Interactives */
+  &:not([disabled]) {
+    &:hover,
+    &:focus {
+      background-color: $nord4;
+      border: 2px solid $nord0;
+    }
+    &:active {
+      background-color: $nord3;
+      color: $nord6;
+      box-shadow: 0px $offset 10px $nord2;
+      margin: (10px - $offset) 20px (10px + $offset) 20px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+pre {
+  background-color: #263238;
+  width: min-content;
+  padding: 10px;
+  border-radius: 3px;
+  code.language-markup {
+    font-size: 12pt;
+    color: white;
+    font-family: "Droid Sans Mono", "monospace", monospace,
+      "Droid Sans Fallback";
+    span.tag {
+      color: #ea6e75;
+      .punctuation {
+        color: #89ddff;
+      }
+      .attr-name {
+        color: #a87fc8;
+        font-style: italic;
+      }
+      .attr-value {
+        color: #c3e88d;
+      }
+    }
+  }
+}
