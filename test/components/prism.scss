@@ -3,11 +3,15 @@ pre {
   width: min-content;
   padding: 10px;
   border-radius: 3px;
+  box-shadow: 0px 0px 5px;
+  transition: 200ms;
+  overflow-y: scroll;
+
   code.language-markup {
-    font-size: 12pt;
+    max-width: 500px;
     color: white;
-    font-family: "Droid Sans Mono", "monospace", monospace,
-      "Droid Sans Fallback";
+    font-family: 'Droid Sans Mono', 'monospace', monospace,
+      'Droid Sans Fallback';
     span.tag {
       color: #ea6e75;
       .punctuation {
@@ -21,5 +25,8 @@ pre {
         color: #c3e88d;
       }
     }
+  }
+  &:hover {
+    box-shadow: 0px 0px 10px;
   }
 }

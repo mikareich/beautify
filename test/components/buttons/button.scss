@@ -1,4 +1,4 @@
-@import "../../../node_modules/nord/src/sass/nord.scss";
+@import '../../../node_modules/nord/src/sass/nord.scss';
 $offset: 5px;
 beautify-button {
   /* Basic */
@@ -21,14 +21,12 @@ beautify-button {
   font-weight: bold;
   cursor: pointer;
 
-  beuatify-button-prepend {
+  span.prepend {
     margin-right: 20px;
   }
-  beautify-button-append {
+  span.append {
     margin-left: 20px;
   }
-
-  /*  */
 
   /* disabled mode */
   &[disabled] {
@@ -49,5 +47,9 @@ beautify-button {
       box-shadow: 0px $offset 10px $nord2;
       margin: (10px - $offset) 20px (10px + $offset) 20px;
     }
+  }
+  &::selection,
+  span::selection {
+    background: none;
   }
 }

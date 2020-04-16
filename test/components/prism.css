@@ -5,12 +5,17 @@ pre {
   width: min-content;
   padding: 10px;
   border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 5px;
+          box-shadow: 0px 0px 5px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  overflow-y: scroll;
 }
 
 pre code.language-markup {
-  font-size: 12pt;
+  max-width: 500px;
   color: white;
-  font-family: "Droid Sans Mono", "monospace", monospace, "Droid Sans Fallback";
+  font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';
 }
 
 pre code.language-markup span.tag {
@@ -28,5 +33,10 @@ pre code.language-markup span.tag .attr-name {
 
 pre code.language-markup span.tag .attr-value {
   color: #c3e88d;
+}
+
+pre:hover {
+  -webkit-box-shadow: 0px 0px 10px;
+          box-shadow: 0px 0px 10px;
 }
 /*# sourceMappingURL=prism.css.map */

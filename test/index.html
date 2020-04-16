@@ -19,49 +19,20 @@
     <section id="buttons">
       <h2>Buttons</h2>
       <h3>Standart Button</h3>
-      <beautify-button /></beautify-button>
+      <beautify-button label="My Button" prepend-icon="🚀" append-icon="👨‍🚀"/></beautify-button>
       <pre>
         <code class="language-markup ">
-&lt;beautify-button>
-  &lt;beautify-button-prepend>
-    🚀
-  &lt;/beautify-button-prepend>
-  &lt;beautify-button-body>My Button&lt;/beautify-button-body>
-  &lt;beautify-button-append>
-    👨‍🚀
-  &lt;/beautify-button-append>
-&lt;/beautify></code>         
+&lt;beautify-button label="My Button" prepend-icon="🚀" append-icon="👨‍🚀"/>&lt;/beautify-button></code>         
         </pre>
       <h3>Disabled Button</h3>
-      <beautify-button disabled>
-        <beautify-button-prepend>
-          🚀
-        </beautify-button-prepend>
-        <beautify-button-body>My Button</beautify-button-body>
-        <beautify-button-append>
-          👨‍🚀
-        </beautify-button-append>
-      </beautify-button-prepend>
-      </beautify-button>
+      <beautify-button disabled label="My Button" prepend-icon="🚀" append-icon="👨‍🚀"/></beautify-button>
+
       <pre>
         <code class="language-markup ">
-&lt;beautify-button disabled>
-  &lt;beautify-button-prepend>
-    🚀
-  &lt;/beautify-button-prepend>
-  &lt;beautify-button-body>My Button&lt;/beautify-button-body>
-  &lt;beautify-button-append>
-    👨‍🚀
-  &lt;/beautify-button-append>
-&lt;/beautify></code>         
+&lt;beautify-button disabled label="My Button" prepend-icon="🚀" append-icon="👨‍🚀"/>&lt;/beautify-button></code>         
         </pre>
     </section>
     <script src="./components/prism.min.js"></script>
     <script src="./components/buttons/button.js"></script>
-    <script>
-      const beautifyButtons = document.querySelectorAll("beautify-button")
-      beautifyButtons[0].label = "Mika"
-      beautifyButtons[0].label = "Mika de"
-    </script>
   </body>
 </html>
